@@ -1,0 +1,90 @@
+:root{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ececec;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  color: #525252;
+}
+.sitelogo {
+  display: block;
+  height: 5rem;
+  /* margin: 1rem; */
+}
+
+header {
+  background-color: #fff;
+}
+
+nav {
+  background-color: #000;
+  color: #fff;
+}
+
+nav ul {
+list-style: none;
+padding-left: 0;
+margin: 0;
+display: flex;
+}
+
+nav ul li {
+  padding: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: ease-in-out .2s all;
+}
+
+nav ul li a:hover {
+  opacity: .6;
+}
+
+.header-image{
+  display: block;
+margin-top: 2rem;
+margin-bottom: 2rem;
+  width: 100%;
+  object-fit: cover;
+  max-height: 30rem;
+}
+
+/* Feature */
+.features {
+  display: grid;
+  gap: 0 2rem;
+}
+
+.features-item {
+  background-color: #fff;
+  grid-row: 3;
+  padding: 1rem 2rem;
+}
+
+/* Content */
+
+.content-wrap {
+  display: grid;
+  gap: 0 2rem;
+  background-color: #fff;
+  padding: 1rem 2rem 2rem 2rem;
+  margin: 2rem 0;
+}
+
+.content-wrap .content {
+  grid-row: 2;
+}
+
+.content-wrap aside {
+  grid-row: 2;
+}
+
+.content-wrap aside nav ul {
+  flex-direction: column;
+  width: 23.5rem;
+}
