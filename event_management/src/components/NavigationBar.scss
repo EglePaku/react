@@ -1,0 +1,29 @@
+.navigation {
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    // margin: 0 3rem;
+    // border-bottom: 1px solid lightgray;
+    // max-width: 1200px;
+    margin-left: 8%;
+    margin-right: 8%; 
+    
+  }
+
+  // &-logo {
+  //   position: fixed;
+  // }
+
+  &-item {
+    margin-left: 1rem;
+    font-family: Wix Madefor Display;
+font-size: 0.9375rem;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+text-transform: uppercase;
+margin-left: 3rem;
+  }
+}

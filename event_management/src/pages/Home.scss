@@ -1,0 +1,41 @@
+.event-item {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-top-container.placeholder {
+  position: relative;
+}
+
+.event-top-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: center;
+  margin-bottom: 1rem;
+  width: 40%;
+  position: fixed;
+  left: 15vh;
+  top: 35vh;
+  opacity: 1;
+
+  button {
+    margin: 2rem 0;
+  }
+}
+
+.events-wrap {
+  width: 45%;
+}
+
+.container {
+  display: flex;
+  height: 80vh;
+  bottom: 0;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: -2rem;
+  margin-left: 4%;
+  margin-right: 4%;
+}

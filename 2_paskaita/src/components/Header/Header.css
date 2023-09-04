@@ -1,0 +1,12 @@
+header {
+    height: 30vh;
+    background-color: #d3d3d3;
+}
+
+.headerColor-yellow {
+    background-color: yellow;
+}
+
+.headerColor-black {
+    background-color: #000;
+}

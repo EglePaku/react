@@ -1,0 +1,11 @@
+button {
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+.red {
+    background-color: red;
+}
+.black {
+    background-color: #000;
+}

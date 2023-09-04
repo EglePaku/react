@@ -1,0 +1,48 @@
+$border-color-default: #ccc;
+$border-color-focus: #0077b6;
+$placeholder-color: #888;
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #000 !important;
+  opacity: 1; /* Firefox */
+  font-family: 'Wix Madefor Display', sans-serif;
+}
+
+.input {
+  font-size: 16px;
+  font-family: 'Wix Madefor Display', sans-serif;
+  padding: 13px 15px;
+  background: #fff;
+  border: 2px solid #000;
+  color: #000;
+  outline: none;
+  transition: border-color 0.3s ease;
+  border-radius: 30px;
+
+  &:focus {
+    border-color: $border-color-focus;
+  }
+
+  &::placeholder {
+    color: $placeholder-color;
+  }
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+label {
+  font-weight: 800;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  line-height: 2.5rem;
+}
+
+form {
+  button {
+    margin-top: 2rem;
+  }
+  padding-bottom: 6rem;
+}

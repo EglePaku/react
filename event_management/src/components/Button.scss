@@ -1,0 +1,56 @@
+$button-color-default: #000;
+$button-color-hover: darken($button-color-default, 10%);
+$button-text-color: #ffffff;
+$button-padding: 10px 20px;
+$button-border-radius: 500px;
+$button-transition: background-color 0.3s ease;
+
+.button {
+  background-color: $button-color-default;
+  color: $button-text-color;
+  padding: $button-padding;
+  border-radius: $button-border-radius;
+  border: none;
+  cursor: pointer;
+  transition: $button-transition;
+  font-size: 16px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: 1rem 2rem;
+  position: relative;
+width: auto;
+
+
+
+  &:before {
+    content: '';
+    display: block;
+    background-color: #333;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 500px;
+    top: 7px;
+    left: 7px;
+border: 2px dashed #000;
+background: #EBD300;
+z-index: -1;
+transition: ease-in-out all .2s;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $button-color-hover;
+    &:before {
+      top: 4px;
+      left: 4px;
+
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}
