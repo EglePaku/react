@@ -6,6 +6,12 @@ import Button from "../components/Button";
 import { HOME_PATH } from "../routes/routes";
 import "./NewEvent.scss";
 
+
+
+
+
+
+
 const NewEvent = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
@@ -16,6 +22,18 @@ const NewEvent = () => {
   const [endingDate, setEndingDate] = useState("");
 
   const navigate = useNavigate();
+
+
+
+
+
+
+
+
+
+
+
+
 
   const handleSubmit = (e) => {
     e.preventDefault();

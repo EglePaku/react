@@ -1,0 +1,80 @@
+$button-color-default: #FF8130;
+$button-color-hover: darken($button-color-default, 10%);
+$button-text-color: #ffffff;
+$button-padding: 10px 20px;
+$button-border-radius: 4px;
+$button-transition: background-color 0.3s ease;
+
+.button {
+  background-color: $button-color-default;
+  color: $button-text-color;
+  padding: $button-padding;
+  border-radius: $button-border-radius;
+  border: none;
+  cursor: pointer;
+  transition: $button-transition;
+  font-size: 15px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: .8rem 2rem;
+  position: relative;
+  width: auto;
+
+  &:hover,
+  &:focus {
+    background-color: $button-color-hover;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}
+
+.btn-outline {
+border-radius: $button-border-radius;
+color: $button-color-default;
+border: 1px solid $button-color-default;
+background-color: #fff;
+font-size: 15px;
+outline: none;
+text-transform: uppercase;
+font-weight: 800;
+padding: .8rem 2rem;
+position: relative;
+width: auto;
+transition: $button-transition;
+
+&:hover,
+&:focus {
+  background-color: $button-color-hover;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid $button-color-hover;
+}
+}
+
+.btn-wrap {
+  button {
+    &:last-child {
+      margin-left: 1rem;
+    }
+  }
+}
+
+.btn-card-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1rem;
+.button,
+.btn-outline {
+  margin: .2rem;
+width: 50%;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+}
+}

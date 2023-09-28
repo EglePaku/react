@@ -1,0 +1,29 @@
+.event-top-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  button {
+    margin: 2rem 0;
+  }
+}
+
+// --------------
+
+// .events-wrap {
+//   display: flex;
+//   grid: 3;
+
+//   .card-container {
+//     width: auto;
+//     display: grid;
+//     grid: 3;
+//     gap: 3;
+//   }
+
+// }
+
+// .container {
+//   width: 100%;
+// }

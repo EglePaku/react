@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+$primary: #4499df;
+$secondary: #0b1626;
+$grey: #ebeff1;
+
+@mixin transition {
+  transition: ease-in-out all 0.2s;
+}
+
+body {
+  background-color: $grey;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body,
+p,
+h1,
+h2 {
+  margin: 0;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.d-none {
+  display: none;
+}
+
+.c-padding {
+  padding: 1.2rem;
+}
+
+.logo {
+  font-family: Roboto;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: block;
+  padding: 1.2rem;
+}
+
+.container {
+  display: flex;
+}
+
+/* General */
+.content-wrap {
+  width: 100%;
+}
+.sidebar {
+  min-width: 255px;
+  background-color: $secondary;
+  color: #fff;
+  min-height: 100vh;
+  //   padding: 1rem;
+  & > * {
+    border-bottom: 1px solid #ffffff1a;
+    min-width: 100%;
+  }
+}
+
+// Header
+
+.css-1wlk0hk-MuiAvatar-root{
+    width: 35px !important;
+    height: 35px !important;
+}
+
+.header {
+  background-color: $primary;
+  color: #fff;
+
+  .header-top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem 1.5rem;
+
+    & > * {
+      margin-left: 1rem;
+    }
+  }
+  .header-middle {
+    padding: 0.2rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
+      border-color: #fff;
+      color: #fff;
+      text-transform: none;
+      @include transition();
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    .middle-right {
+      display: flex;
+      align-items: center;
+
+      & > * {
+        margin-left: 1rem;
+      }
+    }
+  }
+  .header-bottom {
+    padding: 0 1.5rem;
+
+    .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+      color: #ffffff7b;
+      @include transition();
+
+      &:hover {
+        color: #fff;
+      }
+    }
+    .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+      color: #fff;
+    }
+    .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+      text-transform: none;
+      margin: 0;
+      min-width: auto;
+      max-width: auto;
+      padding: 0;
+      margin-right: 2rem;
+    }
+
+    .css-1aquho2-MuiTabs-indicator {
+      position: absolute;
+      height: 4px;
+      border-radius: 10px 10px 0 0;
+      bottom: 0;
+      width: 100%;
+      -webkit-transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      background-color: #fff;
+    }
+  }
+}
+
+.sidebar-nav-wrap {
+  background-color: #ffffff13;
+  padding-bottom: 1rem;
+  & > * {
+    padding: 0.4rem 1.2rem;
+  }
+  .nav-title {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.sidebar-nav-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  @include transition();
+  span {
+    margin-left: 1rem;
+    top: 1px;
+    position: relative;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: $grey;
+    @include transition();
+  }
+  .css-i4bv87-MuiSvgIcon-root {
+    color: $grey;
+    @include transition();
+  }
+
+  &:hover {
+    background-color: rgba($primary, 0.2);
+
+    .css-i4bv87-MuiSvgIcon-root {
+      color: $primary !important;
+    }
+    span {
+      color: $primary;
+    }
+  }
+}
+
+.sidebar-nav-item.active {
+  background-color: rgba($primary, 0.2);
+
+  .css-i4bv87-MuiSvgIcon-root {
+    color: $primary !important;
+  }
+  span {
+    color: $primary;
+  }
+}
+
+// Tabs
+.tab-content {
+  padding: 3rem 12rem;
+  .tab-content-wrap {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1.5px 1.5px 0px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.tab-one-content {
+  padding: 2rem;
+  text-align: center;
+  color: #666666;
+}
+
+// Input
+
+.css-7obqij-MuiInputBase-root-MuiInput-root {
+  padding: 0.7rem 1rem;
+  background-color: #F5F5F5;
+  border-radius: 8px 8px 0 0 ;
+}
+
+

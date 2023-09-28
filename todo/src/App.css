@@ -1,0 +1,153 @@
+body {
+  margin: 2rem 0 3rem 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F8F4F1;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  position: relative;
+}
+
+.content {
+  max-width: 60vw;
+  width: 100%;
+  position: relative;
+  
+}
+
+.sidebar { 
+position: sticky !important;
+margin-left: 30px;
+width: 100%;
+max-width: 300px;
+top: 0;
+max-height: 100px;
+}
+
+.sidebar-item-wrap {
+  display: flex;
+  padding: .3rem 1rem;
+  background-color: #fff;
+  align-items: center;
+}
+
+.sidebar-item-wrap:nth-child(2n){
+  padding-top: 1rem !important;
+}
+.sidebar-item-wrap:last-child{
+  padding-bottom: .7rem !important;
+}
+
+.sidebar-item-wrap:not(:nth-child(1)){
+  border-top: 1px solid #eee;
+}
+
+.sidebar-item-wrap img {
+  min-width: 60px;
+  max-width: 60px;
+  display: block;
+  margin-right: 10px;
+}
+
+.btn-wrap {
+  width: 100%;
+  background-color: #fff;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #eee;
+}
+
+.sidebar .MuiButton-root {
+  max-width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .MuiPaper-elevation {
+  max-width: 30%;
+} */
+
+.MuiBox-root {
+  display: flex;
+  flex-direction: column;
+  /* max-width: 30%; */
+  background-color: #fff;
+  border-radius: 2px;
+  border: 1px solid #eee;
+  grid-template-columns: 3;
+  padding: 1rem;
+  min-height: 30vh;
+  justify-content: space-between;
+}
+
+/* .MuiBox-root:hover {
+  opacity: .8;
+} */
+
+.MuiPaper-root {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.product-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.sidebar .MuiTypography-h6 {
+  text-align: left;
+  display: block;
+  width: 100%;
+}
+
+.sidebar .price {
+  font-size: 1.2rem !important;
+  margin-left: 20px;
+float: right;
+}
+
+.MuiTypography-h6 {
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  line-height: 120% !important;
+  text-align: center;
+  opacity: .7;
+  margin: 1rem 0 !important;
+}
+
+.price {
+  font-size: 1.5rem !important;
+  font-weight: 500 !important;
+  color: #D32C37;
+}
+
+.MuiButtonBase-root {
+  border-radius: 500px !important;
+  text-transform: none !important;
+  width: 100%;
+  background-color: #D32C37 !important;
+  box-shadow: none !important;
+}
+
+
+.placeholder {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
+  border: 1px solid #eee;
+}
+
+.placeholder img {
+  max-width: 200px;
+  margin-bottom: 1rem;
+}
